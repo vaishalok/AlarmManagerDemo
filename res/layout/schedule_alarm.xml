@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:scrollbars="none"
+	android:fadingEdge="none"
+	android:background="#ffffffff"
+	> 
+	<RelativeLayout
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:padding="10dip"
+	    >
+		<TextView  
+			android:id="@+id/schedule_alarm_heading"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/schedule_alarm_heading"
+		    android:textColor="#ff333333"
+		    android:textStyle="bold"
+		    android:textSize="15dip"
+		    android:paddingTop="30dip"
+		    android:paddingBottom="30dip"
+		    android:layout_alignParentTop="true"
+		    >
+	    </TextView>
+	    
+	    <TextView  
+	    	android:id="@+id/schedule_alarm_choose_date_text_view"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" 
+		    android:text="Choose Date:"
+		    android:textColor="#ff333333"
+		    android:textStyle="bold"
+		    android:textSize="15dip"
+		    android:paddingTop="30dip"
+		    android:paddingBottom="30dip"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@id/schedule_alarm_heading"
+		    >
+	    </TextView>
+		    
+	   	<Button
+	   		android:id="@+id/schedule_alarm_choose_date_button"
+	   		android:layout_width="wrap_content"
+	   		android:layout_height="wrap_content"
+	   		android:text="Choose Date"
+	   		android:layout_marginTop="20dip"
+		    android:layout_marginBottom="20dip"
+		    android:layout_alignParentRight="true"
+	   		android:layout_below="@id/schedule_alarm_heading"
+	   		>
+	   	</Button>
+		
+	    <TextView  
+	    	android:id="@+id/schedule_alarm_choose_time_text_view"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" 
+		    android:text="Choose Time:"
+		    android:textColor="#ff333333"
+		    android:textStyle="bold"
+		    android:textSize="15dip"
+		    android:paddingTop="20dip"
+		    android:paddingBottom="30dip"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@id/schedule_alarm_choose_date_text_view"
+		    >
+	    </TextView>
+		    
+	   	<Button
+	   		android:id="@+id/schedule_alarm_choose_time_button"
+	   		android:layout_width="wrap_content"
+	   		android:layout_height="wrap_content"
+	   		android:text="Choose Time"
+	   		android:layout_alignParentRight="true"
+	   		android:layout_below="@id/schedule_alarm_choose_date_button"
+	   		>
+	   	</Button>    	
+		    	
+	   	<Button
+	   		android:id="@+id/schedule_alarm_done_button"
+	   		android:layout_width="fill_parent"
+	   		android:layout_height="wrap_content"
+	   		android:text="Set Alarm"
+	   		android:layout_marginTop="30dip"
+	   		android:layout_below="@id/schedule_alarm_choose_time_text_view"
+	   		>
+	   	</Button>
+	   	
+	   	<TextView
+	   		android:id="@+id/schedule_alarm_alarm_set_text_view"
+	   		android:layout_width="fill_parent"
+	   		android:layout_height="wrap_content"
+	   		android:visibility="gone"
+	   		android:text="@string/schedule_alarm_alarm_set_successfully"
+	   		android:layout_below="@id/schedule_alarm_done_button"
+	   		android:textColor="#ff333333"
+	   		android:textStyle="bold"
+	   		android:layout_marginTop="20dip"
+	   		>
+	   	</TextView>
+	</RelativeLayout>
+</ScrollView>

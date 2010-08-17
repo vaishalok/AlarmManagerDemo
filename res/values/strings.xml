@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, ScheduleAlarm!</string>
     <string name="app_name">AlarmManagerDemo</string>
+    <string name="schedule_alarm_heading">Choose the time at which you want the intent get fired:</string>
+    <string name="schedule_alarm_alarm_set_successfully">Alarm has been set. Now if you will set another alarm, before this one get fired, it will replace the existing one.</string>    
 </resources>
